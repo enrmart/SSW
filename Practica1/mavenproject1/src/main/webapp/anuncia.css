@@ -1,0 +1,383 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  
+  color:white;
+  background: linear-gradient(0deg, rgba(230,36,82,1) 0%, rgba(241,184,70,1) 50%, rgba(250,206,117,1) 100%);
+  
+  font-size:16px;
+  font-family: 'Oswald', sans-serif;
+  
+}
+
+.todo{
+  zoom:90%;
+  background: rgb(43, 43, 43);
+  box-shadow: 5px 5px 10px #343434; 
+  width:90%;
+  margin:auto;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  margin-top: 50px;
+}
+
+
+
+.user{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  top: -20px;
+}
+
+.navMain{
+  font-size:17px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 80px 0;
+}
+.brand1{
+  width: 150px;
+  height: 100px;
+  position: relative;
+  top: -20px;
+ 
+}
+.fondo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  
+}
+
+.datos{
+  background: rgb(43, 43, 43);
+  grid-template-columns:1fr 1fr;
+  display: grid;
+  gap: 25%;
+  margin: 50px 0;
+  padding:20px 10px;
+  
+  
+}
+ul{
+  list-style: none;
+  
+}
+li{
+  padding: 25px 20px;
+}
+h1{
+  margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+
+}
+ h2{
+  margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+ input[type="text"], input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+}
+ input[type="button"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background:linear-gradient(150deg,red,  #c26208,orange );
+  color: #fff;
+  border-radius: 20px;
+  padding: 7px 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+ .opcionesBtn {
+  border: none;
+  outline: none;
+  height: 40px;
+  background:linear-gradient(150deg,red,  #c26208,orange );
+  color: #fff;
+  border-radius: 20px;
+  padding: 7px 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.opcionesBtn{
+    width: 200%;
+}
+
+.opcionesBtn:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+input[type="button"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+label{
+  font-weight: bold;
+}
+.foto{
+  height: 200px;
+  width: 250px;
+  margin:0 10px;
+
+}
+.footer{
+  background: black;
+  color: #616161;
+  font-size: 18px;
+  padding:20px 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.img{
+  width: 990px;
+  height: 50px;
+   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+label{
+  margin: 0 20px
+}
+.opciones{
+  margin-top: 80px;
+  padding-top: 20px;
+  display:flex;
+  justify-content: space-around;
+  
+}
+.Selector{
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #ffa918;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* The container */
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .checkmark1 {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container1 input:checked ~ .checkmark1 {
+  background-color: #ffa918;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container1 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container1 .checkmark1:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.Ascen{
+  display:flex;
+ 
+}
+
+
+ .dropdown {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    
+  }
+  .desplegable{
+    height: 40px;
+    width: auto;
+    background:linear-gradient(150deg,red,  #c26208,orange );
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding:5px;
+    margin-left:10px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    width: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color:white;
+  }
+  .dropdown-content [name="drop"]{
+    display: block;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+    border:none;
+    width:100%;
+  }
+  .dropdown-content [name="drop"]:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
+  
+  
+input[type="file"] {
+  display:none ; /* Oculta el botón de carga de archivos predeterminado */
+}
+
+#custom-button {
+  width: 50%;
+  height: 100%;
+ border: none;
+  outline: none;
+  background:linear-gradient(150deg,red,  #c26208,orange );
+  color: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+   text-align: center;
+  line-height: 1;
+  display: inline-block;
+}
+
+#custom-button:hover {
+ cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}

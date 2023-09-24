@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uflat | Anunciate</title>
+    <link rel="stylesheet" href="anuncia.css">
+</head>
+<body>
+    <div class="todo">
+    <div class="logos">
+
+        <nav class="navMain">
+            <ul class="navMenu show">
+                <a href="indexPerfil.html"><img src="img/IMG_0118.png" alt="LOGO" class="brand1"></a>
+            </ul>
+            
+           
+            <ul class="navMenuR">
+                <div class="fondo">
+                    <img src="img/png-transparent-computer-icons-user-user-icon.png" alt="LOGO" class="user">
+                    <div class="dropdown">
+                        <button class="desplegable">Pepesanti</button>
+                        <div class="dropdown-content">
+                            <a href="perfil.html">Mi perfil</a>
+                            <a href="piso_detallado_sinperfil.html">Cerrar sesion</a>
+                        </div>
+                    </div>
+                </div>  
+            </ul>
+
+        </nav>  
+        </div>
+        <h1 class="Titulo">Buenos dias Pepe</h1>
+        <h2 class="descripcion">Datos del piso a anunciar</h2>
+        <form action="insertarPisoServlet" method="post">
+        <div class="datos">
+            
+            
+            <ul class="izquierdo">
+                <li>
+                      <!-- Direccion INPUT -->
+                <label for="Direccion">Calle:</label>
+                <input type="text" name="Calle" placeholder="Introduzca Direccion">
+
+                </li>
+                <li>
+                    <!-- Ciudad INPUT -->
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" name="Ciudad" placeholder="Introduzca Ciudad">
+                    
+                </li>
+                <li>
+                    <!-- Pais INPUT -->
+                <label for="Pais">Pais:</label>
+                <input type="text" name="Pais" placeholder="Introduzca Pais">
+                    
+                </li>
+                <li>
+                    <!-- Superficie INPUT -->
+                <label for="Superficie">Superficie en m^2:</label>
+                <input type="text" name="Superficie" placeholder="Introduzca Superficie">
+                    
+                </li>
+                <li>
+                    <!-- Descripcion INPUT -->
+                <label for="Descripcion">Descripcion:</label>
+                <input type="text" name="Descripcion" placeholder="Introduzca Descripcion">
+                    
+                </li>
+                <li>
+                       <!-- Descripcion INPUT -->
+                       <label id="pa"  class="container">Parking
+                        <input type="checkbox" name="Parking">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label  id="in"  class="container">Internet
+                        <input type="checkbox" name="Internet">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label  id="ca" class="container">Calefaccion
+                        <input type="checkbox" name="Calefaccion">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label id="fu"  class="container">Fumar
+                        <input type="checkbox" name="Fumar">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label id="ma"  class="container">Mascotas
+                        <input type="checkbox" name="Mascotas">
+                        <span class="checkmark"></span>
+                      </label>
+                       <label id="as"  class="container">Ascensor
+                        <input type="checkbox" name="Ascensor">
+                        <span class="checkmark"></span>
+                      </label>
+                    
+                    
+                 </li>
+                
+                
+                
+                
+             
+            </ul>
+
+            
+        </ul>
+       
+        <ul class="derecho">
+            <li>
+                 <!-- Precio INPUT -->
+            <label for="Direccion">Precio/mes:</label>
+            <input type="text" name="Precio" placeholder="Introduzca Precio">
+
+            </li>
+            <li>
+                 <!-- Habitaciones INPUT -->
+            <label for="numHab">Numero de habitaciones:</label>
+            <input type="text" name="numHab" placeholder="Introduzca numero de habitaciones">
+                
+            </li>
+            <li>
+                 <!-- Baños INPUT -->
+            <label for="numbañ">Numero de baños:</label>
+            <input type="text" name="numBa" placeholder="Introduzca numero de baños">
+                
+            </li>
+            <li>
+                <!-- Piso INPUT -->
+            <label for="Piso">Piso:</label>
+            <input type="text" name="Piso" placeholder="Introduzca Piso">
+                
+            </li>
+            <!-- <li>
+                <div class="Ascen">
+                    <label for="Ascensor">Ascensor:</label>
+            <label class="container1">Si
+                <input type="radio" checked="checked" name="ascensor">
+                <span class="checkmark1"></span>
+              </label>
+              <label class="container1">No
+                <input type="radio" name="ascensor">
+                <span class="checkmark1"></span>
+              </label>
+                </div>
+                 
+        </li> -->
+             
+           
+        </ul>
+
+
+        </div>
+
+        <div class="img">
+            <ul>
+                <input id="Añadir" type="submit" value="Añadir imagen">
+            </ul>
+            <ul>
+                <input type="file" name ="foto">
+                <!--<img src="img/Como-distribuir-los-muebles-en-una-habitacion.jpg" alt="LOGO" class="foto" name="foto">-->
+            </ul>
+           <!-- <ul>
+                <img src="img/errores-reformar-baño-hola-decoracion-t.jpg" alt="LOGO" class="foto" name="foto">
+            </ul>
+            <ul>
+                <img src="img/E-C5-Orleans-PLOMO-CLARO-calacatta.jpg" alt="LOGO" class="foto" name="foto">
+            </ul>-->
+          
+            
+        
+        </div>
+        <div class="opciones">
+            <ul>
+                <a href="index.html">
+                    <input id="aceptar" type="submit" value="Cancelar">
+                </a>
+                
+            </ul>
+            <ul>
+                <a href="index.html"></a>
+                <input id="cancelar" type="submit" value="Confirmar">
+            </ul>
+            
+    
+        </div>
+    </form>
+    
+
+    </div>
+
+   
+    
+    
+</body>
+<footer class="footer">
+    <h3><i class="fa-solid fa-copyright"></i> Copyright 2023 Uflat Proudly powered by Group 12</h3>
+</footer>
+
+
+</html>
